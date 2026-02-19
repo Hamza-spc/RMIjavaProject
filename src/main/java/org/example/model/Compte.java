@@ -3,6 +3,7 @@ package org.example.model;
 import java.io.Serializable;
 
 public class Compte implements Serializable {
+
     private static final long serialVersionUID = 1L;
 
     private int id;
@@ -18,11 +19,13 @@ public class Compte implements Serializable {
     public int getId() { return id; }
     public String getTitulaire() { return titulaire; }
     public double getSolde() { return solde; }
+
     public void setSolde(double solde) { this.solde = solde; }
 
     @Override
     public String toString() {
-        return "Compte{id=" + id + ", titulaire='" + titulaire + "', solde=" + solde + "}";
+        return "Compte{id=" + id +
+                ", titulaire='" + titulaire + '\'' +
+                ", solde=" + solde + '}';
     }
 }
-
