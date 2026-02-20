@@ -22,6 +22,6 @@ public class ServeurRMI {
 
         Naming.rebind("rmi://localhost/CompteService", service);
 
-        System.out.println("✅ Serveur RMI démarré...");
+        System.out.println("✅ Serveur RMI est démarré...");
     }
 }
